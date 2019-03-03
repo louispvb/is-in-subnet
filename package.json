@@ -1,20 +1,20 @@
 {
-  "name": "is-in-subnet",
-  "version": "1.9.0",
+  "name": "subnet-check",
+  "version": "1.10.0",
   "description": "Check if an IPv4 or IPv6 address is contained in the given CIDR subnet",
-  "main": "build/src/index.js",
-  "types": "build/src/index.d.ts",
+  "main": "lib/src/index.js",
+  "types": "lib/src/index.d.ts",
   "scripts": {
-    "clean": "del-cli build .nyc_output coverage",
+    "clean": "del-cli lib .nyc_output coverage",
     "test": "ava --verbose",
     "coverage": "nyc --reporter lcov --reporter text --extension .ts ava",
-    "prepare": "del-cli build && tsc",
+    "prepare": "del-cli lib && tsc",
     "prettier": "prettier --write \"{src,test}/**/*.?(ts|json)\""
   },
   "engines": {
     "node": ">=4.0.0"
   },
-  "repository": "natesilva/is-in-subnet",
+  "repository": "louispvb/subnet-check",
   "keywords": [
     "ip",
     "address",
@@ -24,7 +24,7 @@
     "networking"
   ],
   "license": "MIT",
-  "author": "Nate Silva <nate@natesilva.com>",
+  "author": "Louis <louispvb@gmail.com>, Nate Silva <nate@natesilva.com>",
   "devDependencies": {
     "@types/node": "^10.12.21",
     "ava": "^1.2.1",

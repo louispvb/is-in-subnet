@@ -1,4 +1,4 @@
-# is-in-subnet [![npm](https://img.shields.io/npm/v/is-in-subnet.svg)](https://www.npmjs.com/package/is-in-subnet) [![dependencies](https://img.shields.io/david/natesilva/is-in-subnet.svg)](https://www.npmjs.com/package/is-in-subnet) [![license](https://img.shields.io/github/license/natesilva/is-in-subnet.svg)](https://github.com/natesilva/is-in-subnet/blob/master/LICENSE) [![node](https://img.shields.io/node/v/is-in-subnet.svg)](https://www.npmjs.com/package/p-ratelimit)
+# subnet-check
 
 This is a fork which works independantly of node.js to be able to be used in the browser.
 
@@ -13,12 +13,12 @@ Check if an IPv4 or IPv6 address is contained in the given [CIDR](https://en.wik
 
 ## Installation
 
-`npm i is-in-subnet`
+`npm i -S louispvb/subnet-check`
 
 ## Usage
 
 ```javascript
-const { isInSubnet } = require('is-in-subnet');
+const { isInSubnet } = require('subnet-check');
 
 console.log( isInSubnet('10.5.0.1', '10.4.5.0/16') );   // false
 console.log( isInSubnet('10.5.0.1', '10.4.5.0/15') );   // true

@@ -10,6 +10,7 @@ coverage
 # unit tests
 test/
 build/test/
+lib/test/
 
 # pre-transpiled source
 src/
