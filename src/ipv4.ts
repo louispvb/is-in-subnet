@@ -1,4 +1,4 @@
-import * as net from 'net';
+import * as net from './net';
 
 /**
  * Given an IPv4 address, convert it to a 32-bit long integer.

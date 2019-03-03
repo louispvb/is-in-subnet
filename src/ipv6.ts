@@ -1,4 +1,4 @@
-import * as net from 'net';
+import * as net from './net';
 
 // Note: Profiling shows that on recent versions of Node, string.split(RegExp) is faster
 // than string.split(string).
